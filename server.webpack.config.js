@@ -6,7 +6,7 @@ const webpack = require('webpack')
 module.exports = {
   entry: {
     // This is our Express server for Dynamic universal
-    server: './server-src/server.ts'
+    server: './src/ng-server/server.ts'
   },
   target: 'node',
   resolve: { extensions: ['.ts', '.js'] },
@@ -24,13 +24,13 @@ module.exports = {
     new webpack.ContextReplacementPlugin(
       // fixes WARNING Critical dependency: the request of a dependency is an expression
       /(.+)?angular(\\|\/)core(.+)?/,
-      path.join(__dirname, 'src'), // location of your src
+      path.join(__dirname, 'src/ng-client'), // location of your src
       {} // a map of your routes
     ),
     new webpack.ContextReplacementPlugin(
       // fixes WARNING Critical dependency: the request of a dependency is an expression
       /(.+)?express(\\|\/)(.+)?/,
-      path.join(__dirname, 'src'),
+      path.join(__dirname, 'src/ng-client'),
       {}
     )
   ]

@@ -24,7 +24,7 @@ const {
   AppServerModuleNgFactory,
   LAZY_MODULE_MAP
   // tslint:disable-next-line:no-require-imports
-} = require('../dist-server/main.bundle')
+} = require('../../dist-server/main.bundle')
 
 // Express Engine
 import { ngExpressEngine } from '@nguniversal/express-engine'

@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build":
-      "ng build --prod && ng build --prod --app 1 --output-hashing=false",
+      "ng build --prod && ng build --prod --app 1 --output-hashing=false && npm run webpack:server",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
