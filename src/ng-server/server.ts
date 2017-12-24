@@ -14,7 +14,7 @@ enableProdMode()
 const app = express()
 
 const PORT = process.env.PORT || 4000
-const DIST_FOLDER = join(process.cwd(), 'dist')
+const DIST_FOLDER = join(process.cwd(), 'dist/ng-client')
 
 // Our index.html we'll use as our template
 const template = readFileSync(join(DIST_FOLDER, 'index.html')).toString()
@@ -24,7 +24,7 @@ const {
   AppServerModuleNgFactory,
   LAZY_MODULE_MAP
   // tslint:disable-next-line:no-require-imports
-} = require('../../dist-server/main.bundle')
+} = require('../../dist/ng-server-app/main.bundle')
 
 // Express Engine
 import { ngExpressEngine } from '@nguniversal/express-engine'

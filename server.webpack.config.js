@@ -14,7 +14,7 @@ module.exports = {
   externals: [/(node_modules|main\..*\.js)/],
   output: {
     // Puts the output at the root of the dist folder
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'dist/ng-server'),
     filename: '[name].js'
   },
   module: {

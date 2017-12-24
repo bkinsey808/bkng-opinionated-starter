@@ -6,7 +6,7 @@
   "apps": [
     {
       "root": "src/ng-client",
-      "outDir": "dist",
+      "outDir": "dist/ng-client",
       "assets": ["assets", "favicon.ico"],
       "index": "index.html",
       "main": "main.ts",
@@ -30,7 +30,7 @@
     },
     {
       "root": "src/ng-client",
-      "outDir": "dist-server/",
+      "outDir": "dist/ng-server-app/",
       "assets": ["assets", "favicon.ico"],
       "index": "index.html",
       "main": "main.server.ts",

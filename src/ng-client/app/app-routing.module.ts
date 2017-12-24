@@ -7,7 +7,7 @@ import { Routes, RouterModule } from '@angular/router'
 // }]
 
 @NgModule({
-  imports: [RouterModule],
+  imports: [RouterModule.forRoot([])],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
